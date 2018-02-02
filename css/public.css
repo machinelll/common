@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    font-family: sans-serif, Helvetica Neue, Helvetica, "微软雅黑";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    border: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: calc(100vw / 7.5);
+}
+
+input,
+button {
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*禁止webView中的复制黏贴放大镜的默认行为*/
+
+*:not(input, textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    /*火狐*/
+    -ms-user-select: none;
+    /*IE10*/
+    user-select: none;
+}
+
+/* 绝对定位居中 */
+
+.absolute-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+/* flex */
+
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+}
+
+.flex-col {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+}
+
+.cell {
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+.cell-full {
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    height: 100%;
+}
+
+.overflow-scroll {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+/* icon */
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.inner {
+    height: calc(100% + 1px);
+}
