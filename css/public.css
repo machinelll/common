@@ -138,3 +138,13 @@ div {
 .inner {
     height: calc(100% + 1px);
 }
+
+/* 修改select展示 */
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
